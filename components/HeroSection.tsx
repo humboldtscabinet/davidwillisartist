@@ -9,7 +9,10 @@ export default function HeroSection() {
           David Willis
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-          Contemporary Artist & Creator
+          Five Decades of Sculptural Mastery and International Recognition
+        </p>
+        <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto opacity-90">
+          1938–2020
         </p>
         <a
           href="#gallery"

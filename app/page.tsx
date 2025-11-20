@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import ArtisticVisionSection from "@/components/ArtisticVisionSection";
 import GallerySection from "@/components/GallerySection";
 import TimelineSection from "@/components/TimelineSection";
 import LegacySection from "@/components/LegacySection";
@@ -9,6 +10,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <AboutSection />
+      <ArtisticVisionSection />
       <GallerySection />
       <TimelineSection />
       <LegacySection />

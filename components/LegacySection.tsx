@@ -1,19 +1,49 @@
 export default function LegacySection() {
   return (
     <section id="legacy" className="py-20 px-4 bg-surface-dark text-white">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8">
-          Legacy & Impact
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          Philosophy & Legacy
         </h2>
-        <p className="text-lg md:text-xl leading-relaxed mb-6">
-          Art has the power to transcend time and space, connecting generations through
-          shared human experiences. My work aims to leave a lasting impression on viewers
-          and inspire future artists.
-        </p>
-        <blockquote className="italic text-xl border-l-4 border-accent pl-6 my-8">
-          &ldquo;Creating art is not just about the present moment—it&rsquo;s about contributing
-          to a larger conversation that spans centuries.&rdquo;
-        </blockquote>
+        
+        <div className="mb-12">
+          <p className="text-sm uppercase tracking-wider text-gray-400 mb-4">From David Willis&rsquo;s writings and family reflections:</p>
+          <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6 mb-6">
+            &ldquo;Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be. I have never been interested in trends or markets. My work is my daily practice, my meditation, my way of understanding the world.
+          </blockquote>
+          <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6 mb-6">
+            I carve to discover what is already hidden within the stone. I build to give form to what cannot be spoken. The work must stand on its own, long after I am gone.
+          </blockquote>
+          <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6">
+            To those who encounter these pieces: approach them slowly. They were not made quickly. They hold decades of looking, thinking, and refining. They are meant to endure.&rdquo;
+          </blockquote>
+        </div>
+
+        <div className="bg-gray-800 rounded-lg p-8 md:p-10">
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-accent">
+            The Estate Collection
+          </h3>
+          <p className="text-gray-300 leading-relaxed mb-6">
+            David Willis&rsquo;s family has carefully preserved his life&rsquo;s work—an extraordinary archive spanning 1970–2020. Unlike many artists whose works are scattered across private collections, the Willis estate offers a rare opportunity to acquire pieces with complete provenance, documentation, and historical context.
+          </p>
+          <p className="text-gray-300 leading-relaxed mb-6">
+            These works have been stored in museum-quality conditions and represent:
+          </p>
+          <ul className="text-gray-300 leading-relaxed mb-6 space-y-2 list-disc list-inside">
+            <li>Major sculptural works from each creative period</li>
+            <li>Preparatory drawings and paintings</li>
+            <li>Exhibition pieces with institutional history</li>
+            <li>Previously unexhibited masterworks</li>
+          </ul>
+          <p className="text-gray-300 leading-relaxed mb-8">
+            This collection is not for liquidation. Each work is offered selectively to serious collectors, galleries, and institutions who understand the significance of acquiring art from a complete, preserved archive of an internationally recognized sculptor.
+          </p>
+          <div className="border-t border-gray-700 pt-6">
+            <p className="text-sm text-gray-400">
+              <strong className="text-white">Inquiry for acquisition:</strong> Contact information available upon request
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
