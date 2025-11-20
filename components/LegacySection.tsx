@@ -36,7 +36,7 @@ export default function LegacySection() {
             <li>Previously unexhibited masterworks</li>
           </ul>
           <p className="text-gray-300 leading-relaxed mb-8">
-            This collection is not for liquidation. Each work is offered selectively to serious collectors, galleries, and institutions who understand the significance of acquiring art from a complete, preserved archive of an internationally recognized sculptor.
+            Each work is offered selectively to serious collectors, galleries, and institutions who understand the significance of acquiring art from a complete, preserved archive of an internationally recognized sculptor.
           </p>
           <div className="border-t border-gray-700 pt-6">
             <p className="text-sm text-gray-400">
