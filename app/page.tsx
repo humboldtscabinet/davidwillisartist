@@ -12,8 +12,8 @@ export default function Home() {
       <AboutSection />
       <ArtisticVisionSection />
       <GallerySection />
-      <TimelineSection />
       <LegacySection />
+      <TimelineSection />
       <footer className="bg-surface-dark text-gray-300 py-8 text-center">
         <p>&copy; {new Date().getFullYear()} David Willis. All rights reserved.</p>
       </footer>
