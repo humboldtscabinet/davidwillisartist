@@ -1,23 +1,58 @@
 const timelineEvents = [
   {
-    year: "2024",
-    title: "Solo Exhibition",
-    description: "Major retrospective at Contemporary Art Museum",
+    year: "1938",
+    title: "Born in Greenfield, Massachusetts",
+    description: "",
+  },
+  {
+    year: "1950s",
+    title: "Early Foundations",
+    description: "Early interests: singing, church choir, outdoors, family",
+  },
+  {
+    year: "Late 1950s–Early 1960s",
+    title: "Military Service",
+    description: "Serves in the Marine Corps",
+  },
+  {
+    year: "1964",
+    title: "Marriage",
+    description: "Marries Barbara Willis",
+  },
+  {
+    year: "1960s–1970s",
+    title: "Classical Voice Studies",
+    description: "Scholarship to the Conservatory in Naples, Italy",
+  },
+  {
+    year: "1970s",
+    title: "Sculpting Begins",
+    description: "Begins sculpting while living throughout Europe",
+  },
+  {
+    year: "1970s–1980s",
+    title: "European Exhibitions",
+    description: "Exhibitions in Bad Kreuznach and Stuttgart, Germany",
+  },
+  {
+    year: "1980s",
+    title: "Global Artist",
+    description: "Lives and creates in Italy, the UK, Japan, and Taiwan",
+  },
+  {
+    year: "1988",
+    title: "The Spirit of Asia in Coral",
+    description: "Taipei Fine Arts Museum",
+  },
+  {
+    year: "1990s–2020",
+    title: "Florida Studio Years",
+    description: "Continues sculpting and painting daily in Florida",
   },
   {
     year: "2020",
-    title: "International Recognition",
-    description: "Featured in Art Basel and Venice Biennale",
-  },
-  {
-    year: "2015",
-    title: "Gallery Representation",
-    description: "Signed with prestigious galleries in NYC and London",
-  },
-  {
-    year: "2010",
-    title: "MFA Graduation",
-    description: "Master of Fine Arts from Rhode Island School of Design",
+    title: "Legacy Preserved",
+    description: "Passes away, leaving a preserved estate collection representing five decades of artistic work",
   },
 ];
 
