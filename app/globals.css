@@ -24,11 +24,19 @@ body::after {
   top: 0;
   bottom: 0;
   width: 200px;
-  background-color: #f5f5f0;
-  background-image: url('/images/border-collage.jpg');
-  background-repeat: repeat-y;
+  background-color: #e8e6e0;
+  background-image: 
+    url('/images/border-collage.jpg'),
+    url('/images/border-collage.jpg'),
+    url('/images/border-collage.jpg'),
+    url('/images/border-collage.jpg');
+  background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: top center;
+  background-position: 
+    top 0px center,
+    top 2474px center,
+    top 4948px center,
+    top 7422px center;
   z-index: 9999;
   pointer-events: none;
   opacity: 0.95;
@@ -40,7 +48,7 @@ body::before {
 
 body::after {
   right: 0;
-  transform: scaleX(-1);
+  transform: scaleX(-1) rotate(180deg);
 }
 
 /* Add padding to main content to account for borders */
