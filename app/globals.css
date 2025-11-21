@@ -26,9 +26,9 @@ body::after {
   bottom: 0;
   width: 200px;
   background-color: #e8e6e0;
-  background-image: url('/images/border-collage.jpg');
+  background-image: url('/images/border-seamless.png');
   background-repeat: repeat-y;
-  background-size: 100% auto;
+  background-size: contain;
   background-position: top center;
   pointer-events: none;
   opacity: 0.95;
@@ -40,7 +40,7 @@ body::before {
 
 body::after {
   right: 0;
-  transform: scaleX(-1) rotate(180deg);
+  transform: scaleX(-1);
 }
 
 /* Add padding to main content to account for borders */
