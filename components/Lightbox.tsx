@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 
 interface LightboxProps {
   image: {
@@ -30,7 +31,7 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+      className="fixed inset-0 z-50 bg-black bg-opacity-95 flex items-center justify-center p-4"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -38,14 +39,21 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
     >
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors"
+        className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors z-10"
         aria-label="Close lightbox"
       >
         &times;
       </button>
       <div className="max-w-5xl max-h-[90vh] flex flex-col items-center">
-        <div className="relative w-full h-full bg-gray-800 flex items-center justify-center rounded-lg">
-          <span className="text-white text-xl">{image.title}</span>
+        <div className="relative w-full h-[80vh]">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            sizes="90vw"
+            className="object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
         <p className="text-white mt-4 text-center text-lg">{image.title}</p>
       </div>

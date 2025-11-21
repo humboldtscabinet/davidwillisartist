@@ -4,32 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Lightbox from "./Lightbox";
 
-const galleryImages = [
-  {
-    id: 1,
-    src: "/images/gallery-1.jpg",
-    alt: "Abstract composition with vibrant colors",
-    title: "Vibrant Dreams",
-  },
-  {
-    id: 2,
-    src: "/images/gallery-2.jpg",
-    alt: "Minimalist landscape painting",
-    title: "Quiet Horizons",
-  },
-  {
-    id: 3,
-    src: "/images/gallery-3.jpg",
-    alt: "Mixed media contemporary art",
-    title: "Urban Reflections",
-  },
-  {
-    id: 4,
-    src: "/images/gallery-4.jpg",
-    alt: "Bold geometric patterns",
-    title: "Structured Chaos",
-  },
-];
+const galleryImages = Array.from({ length: 42 }, (_, i) => ({
+  id: i + 1,
+  src: `/images/david willis coral sculptorPC - A -${String(i + 1).padStart(2, '0')}.jpg`,
+  alt: `David Willis coral sculpture ${i + 1}`,
+  title: `Coral Sculpture ${i + 1}`,
+}));
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
@@ -48,9 +28,13 @@ export default function GallerySection() {
               className="relative aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-brand"
               aria-label={`View ${image.title}`}
             >
-              <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
-                <span className="text-sm">Image {image.id}</span>
-              </div>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover"
+              />
             </button>
           ))}
         </div>
