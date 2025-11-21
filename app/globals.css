@@ -25,9 +25,9 @@ body::after {
   bottom: 0;
   width: 200px;
   background-image: url('/images/border-collage.jpg');
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-position: center;
+  background-repeat: repeat;
+  background-size: 200px auto;
+  background-position: top left;
   z-index: 9999;
   pointer-events: none;
   opacity: 0.95;
@@ -39,6 +39,7 @@ body::before {
 
 body::after {
   right: 0;
+  transform: scaleX(-1);
 }
 
 /* Add padding to main content to account for borders */
