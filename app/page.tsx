@@ -7,7 +7,7 @@ import LegacySection from "@/components/LegacySection";
 
 export default function Home() {
   return (
-    <main>
+    <main id="main-content">
       <HeroSection />
       <AboutSection />
       <ArtisticVisionSection />
