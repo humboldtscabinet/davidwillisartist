@@ -8,14 +8,8 @@ export default function LegacySection() {
         
         <div className="mb-12">
           <p className="text-sm uppercase tracking-wider text-gray-400 mb-4">From David Willis&rsquo;s writings and family reflections:</p>
-          <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6 mb-6">
-            &ldquo;Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be. I have never been interested in trends or markets. My work is my daily practice, my meditation, my way of understanding the world.
-          </blockquote>
-          <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6 mb-6">
-            I carve to discover what is already hidden within the stone. I build to give form to what cannot be spoken. The work must stand on its own, long after I am gone.
-          </blockquote>
           <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6">
-            To those who encounter these pieces: approach them slowly. They were not made quickly. They hold decades of looking, thinking, and refining. They are meant to endure.&rdquo;
+            &ldquo;Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be.&rdquo;
           </blockquote>
         </div>
 
