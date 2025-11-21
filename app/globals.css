@@ -24,8 +24,9 @@ body::after {
   top: 0;
   bottom: 0;
   width: 200px;
+  background-color: #f5f5f0;
   background-image: url('/images/border-collage.jpg');
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: 100% auto;
   background-position: top center;
   z-index: 9999;
