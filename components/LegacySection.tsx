@@ -18,14 +18,11 @@ export default function LegacySection() {
             The Estate Collection
           </h3>
           <p className="text-gray-300 leading-relaxed mb-6">
-            David Willis&rsquo;s family has carefully preserved his life&rsquo;s work—an extraordinary archive spanning 1970–2020. Unlike many artists whose works are scattered across private collections, the Willis estate offers a rare opportunity to acquire pieces with complete provenance, documentation, and historical context.
-          </p>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            These works have been stored in museum-quality conditions and represent:
+            David Willis&rsquo;s family has retained his life&rsquo;s work—an extraordinary archive spanning 1970–2020. The Willis estate offers a rare opportunity to acquire pieces with complete provenance, documentation, and historical context.
           </p>
           <ul className="text-gray-300 leading-relaxed mb-6 space-y-2 list-disc list-inside">
             <li>Major sculptural works from each creative period</li>
-            <li>Preparatory drawings and paintings</li>
+            <li>Drawings and paintings</li>
             <li>Exhibition pieces with institutional history</li>
             <li>Previously unexhibited masterworks</li>
           </ul>
