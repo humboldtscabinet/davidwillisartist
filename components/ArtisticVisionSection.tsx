@@ -52,12 +52,6 @@ export default function ArtisticVisionSection() {
             </p>
           </div>
         </div>
-
-        <div className="prose prose-lg mx-auto max-w-4xl">
-          <p className="text-gray-700 leading-relaxed text-center italic">
-            Willis&rsquo;s work synthesizes influences from prehistoric caves in France and Spain (which he visited early in his career) with Eastern aesthetic principles. His insistence on personal involvement in every stage—from beach to gallery—resulted in works of extraordinary integrity and refinement.
-          </p>
-        </div>
       </div>
     </section>
   );
