@@ -8,7 +8,7 @@ export default function LegacySection() {
         
         <div className="mb-12">
           <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6">
-            &ldquo;Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be.&rdquo;
+            Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be.
           </blockquote>
         </div>
 
