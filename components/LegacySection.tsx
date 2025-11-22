@@ -7,7 +7,6 @@ export default function LegacySection() {
         </h2>
         
         <div className="mb-12">
-          <p className="text-sm uppercase tracking-wider text-gray-400 mb-4">From David Willis&rsquo;s writings and family reflections:</p>
           <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6">
             &ldquo;Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be.&rdquo;
           </blockquote>
