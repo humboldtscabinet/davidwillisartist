@@ -4,12 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Lightbox from "./Lightbox";
 
-const galleryImages = Array.from({ length: 42 }, (_, i) => ({
-  id: i + 1,
-  src: `/images/david willis coral sculptorPC - A -${String(i + 1).padStart(2, '0')}.jpg`,
-  alt: `David Willis coral sculpture ${i + 1}`,
-  title: `Coral Sculpture ${i + 1}`,
-}));
+const galleryImages: Array<{
+  id: number;
+  src: string;
+  alt: string;
+  title: string;
+}> = [];
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
