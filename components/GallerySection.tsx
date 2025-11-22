@@ -11,7 +11,7 @@ const galleryImages = [1,2,4,5,7,8,9,10,11,12,15,16,19,21,23,27,38,39,40,41,42].
 
 export default function GallerySection() {
   return (
-    <section id="gallery" className="py-20 px-4 bg-surface-light">
+    <section id="gallery" className="pt-0 pb-20 px-4 bg-surface-light">
       <div className="max-w-6xl mx-auto">
         <div className="relative w-full mb-12 rounded-lg overflow-hidden">
           <Image
