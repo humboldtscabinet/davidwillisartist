@@ -13,6 +13,15 @@ export default function GallerySection() {
   return (
     <section id="gallery" className="py-20 px-4 bg-surface-light">
       <div className="max-w-6xl mx-auto">
+        <div className="relative w-full mb-12 rounded-lg overflow-hidden">
+          <Image
+            src="/images/gallery-header.jpg"
+            alt="David Willis coral sculpture"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+          />
+        </div>
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand">
           Gallery
         </h2>
