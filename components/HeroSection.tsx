@@ -30,7 +30,7 @@ export default function HeroSection() {
             1938–2020
           </p>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-            Placeholder text about the artist's life and work. This section can include a brief introduction to David Willis's artistic journey, his unique approach to sculpture, and his lasting impact on the art world.
+            Placeholder text about the artist&apos;s life and work. This section can include a brief introduction to David Willis&apos;s artistic journey, his unique approach to sculpture, and his lasting impact on the art world.
           </p>
           <a
             href="#gallery"
