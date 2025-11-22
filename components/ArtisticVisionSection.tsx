@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ArtisticVisionSection() {
   return (
-    <section id="artistic-vision" className="py-20 px-4 bg-gray-50">
+    <section id="artistic-vision" className="pt-0 pb-20 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <div className="relative w-full mb-12 rounded-lg overflow-hidden">
           <Image
