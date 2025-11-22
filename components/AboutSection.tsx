@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 px-4 max-w-4xl mx-auto">
-      <div className="relative w-full h-64 md:h-96 mb-12 rounded-lg overflow-hidden">
+      <div className="relative w-full mb-12 rounded-lg overflow-hidden">
         <Image
           src="/images/about-header.jpg"
           alt="David Willis coral sculpture"
-          fill
-          className="object-cover object-center"
-          style={{ objectPosition: 'center top' }}
+          width={1200}
+          height={800}
+          className="w-full h-auto"
         />
       </div>
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand">
