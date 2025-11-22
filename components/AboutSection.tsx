@@ -1,6 +1,16 @@
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 px-4 max-w-4xl mx-auto">
+      <div className="relative w-full h-64 md:h-96 mb-12 rounded-lg overflow-hidden">
+        <Image
+          src="/images/about-header.jpg"
+          alt="David Willis coral sculpture"
+          fill
+          className="object-cover"
+        />
+      </div>
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand">
         About David Willis
       </h2>
