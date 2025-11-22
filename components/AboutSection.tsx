@@ -8,7 +8,8 @@ export default function AboutSection() {
           src="/images/about-header.jpg"
           alt="David Willis coral sculpture"
           fill
-          className="object-cover"
+          className="object-cover object-center"
+          style={{ objectPosition: 'center top' }}
         />
       </div>
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand">
