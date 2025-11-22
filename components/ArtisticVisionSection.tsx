@@ -14,9 +14,9 @@ export default function ArtisticVisionSection() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white p-8 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-bold mb-4 text-brand-dark">Organic & Natural Forms</h3>
+            <h3 className="text-2xl font-bold mb-4 text-brand-dark">Coral Sculpture Mastery</h3>
             <p className="text-gray-700 leading-relaxed">
-              Flowing, biomorphic shapes inspired by coral, bone, geological formations, and the architecture of living systems
+              Willis pioneered modern coral sculpture, personally collecting raw coral from beaches and transforming each piece through meticulous carving, sanding, and polishing with tin oxide from Vermont to achieve highly polished surfaces
             </p>
           </div>
 
@@ -28,9 +28,9 @@ export default function ArtisticVisionSection() {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-bold mb-4 text-brand-dark">Material Mastery</h3>
+            <h3 className="text-2xl font-bold mb-4 text-brand-dark">International Craftsmanship</h3>
             <p className="text-gray-700 leading-relaxed">
-              Expert handling of stone, wood, bronze, and mixed media, with particular attention to surface texture and patina
+              His global influences reflected in his tools: German leather apron, English chisels and hammers, American protective gear, Japanese and American power tools, Vermont tin oxide, and Japanese grinding discs
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function ArtisticVisionSection() {
 
         <div className="prose prose-lg mx-auto max-w-4xl">
           <p className="text-gray-700 leading-relaxed text-center italic">
-            His work resists easy categorization, existing at the intersection of Abstract Expressionism, organic modernism, and transcultural spirituality. Each piece invites prolonged viewing, revealing layers of meaning and technical sophistication that reward careful study.
+            Willis&rsquo;s work synthesizes influences from prehistoric caves in France and Spain (which he visited early in his career) with Eastern aesthetic principles. His insistence on personal involvement in every stage—from beach to gallery—resulted in works of extraordinary integrity and refinement.
           </p>
         </div>
       </div>

@@ -6,16 +6,16 @@ export default function AboutSection() {
       </h2>
       <div className="prose prose-lg mx-auto max-w-4xl">
         <p className="text-gray-700 leading-relaxed mb-6">
-          David Willis (1938–2020) was an American sculptor and painter whose career spanned five decades and four continents. Born in Greenfield, Massachusetts, Willis discovered his artistic calling after classical voice training led him to a scholarship at the Conservatory in Naples, Italy in the 1960s.
+          David Willis (1938–2020) was an American sculptor and painter whose career spanned five decades and four continents. Born in Greenfield, Massachusetts, Willis began sculpting in 1965 while living in Italy, where he held his first exhibition that same year.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
-          It was in Europe during the 1970s that Willis began sculpting—transforming raw materials into expressive forms that would define his life&rsquo;s work. Living throughout Italy, Germany, the United Kingdom, Japan, and Taiwan, he absorbed diverse cultural influences while maintaining a distinctive artistic vision rooted in organic forms, spiritual themes, and the human condition.
+          His work quickly gained recognition across Europe and Asia. He was represented by prestigious galleries including Patton Gallery in Edinburgh, Alwin Gallery in London, and Galerie Heuser Langner in Frankfurt (from 1978). In 1979, the New Britain Museum of American Art acquired one of his marble statues, and his work entered private collections throughout the world.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
-          His work gained institutional recognition with exhibitions in Bad Kreuznach and Stuttgart, Germany, culminating in his 1988 solo exhibition &ldquo;The Spirit of Asia in Coral&rdquo; at the prestigious Taipei Fine Arts Museum. Despite international acclaim, Willis remained devoted to creation over commerce, rarely selling works and instead building what would become a comprehensive archive of his artistic evolution.
+          Willis became renowned for his modern coral sculptures—works that synthesized Eastern and Western aesthetic principles. His 1988 exhibition at the Taipei Fine Arts Museum marked the first public showing of coral statuary in the Republic of China. This was followed by groundbreaking exhibitions in Singapore and Kuala Lumpur in 1989, introducing modern coral sculpture to new audiences across Southeast Asia.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          From the 1990s until his passing in 2020, Willis worked daily from his Florida studio, producing an extraordinary body of sculptures and paintings. His estate collection represents an unprecedented opportunity to acquire works spanning his entire mature period—a rare archive preserved intact by his family.
+          Throughout his career, Willis maintained complete personal involvement in every facet of creation—from finding coral on beaches to the final polishing process. He rejected helpers, insisting on intimate connection with each work. From the 1990s until his passing in 2020, he worked daily from his Florida studio, building what his family has preserved as a comprehensive archive of his artistic evolution.
         </p>
       </div>
     </section>

@@ -5,43 +5,48 @@ const timelineEvents = [
     description: "",
   },
   {
-    year: "1950s",
-    title: "Early interests: singing, church choir, outdoors, family",
-    description: "",
-  },
-  {
-    year: "Late 1950s–Early 1960s",
-    title: "Serves in the Marine Corps",
-    description: "",
-  },
-  {
     year: "1964",
     title: "Marries Barbara Willis",
     description: "",
   },
   {
-    year: "1960s–1970s",
-    title: "Classical voice studies; scholarship to the Conservatory in Naples, Italy",
+    year: "1965",
+    title: "Begins sculpting; first exhibit in Italy",
+    description: "",
+  },
+  {
+    year: "1967",
+    title: "Exhibits paintings and sculptures at Cosenza Art Gallery, Naples, Italy",
     description: "",
   },
   {
     year: "1970s",
-    title: "Begins sculpting while living throughout Europe",
+    title: "Represented by Patton Gallery (Edinburgh) and Alwin Gallery (London)",
     description: "",
   },
   {
-    year: "1970s–1980s",
-    title: "Exhibitions in Bad Kreuznach and Stuttgart, Germany",
+    year: "1978",
+    title: "Begins representation by Galerie Heuser Langner, Frankfurt, Germany",
     description: "",
   },
   {
-    year: "1980s",
-    title: "Lives and creates in Italy, the UK, Japan, and Taiwan",
+    year: "1979",
+    title: "New Britain Museum of American Art acquires marble statue",
+    description: "",
+  },
+  {
+    year: "1986",
+    title: "Third Okinawan exhibit at Okinawa Sheraton Hotel",
     description: "",
   },
   {
     year: "1988",
-    title: "The Spirit of Asia in Coral, Taipei Fine Arts Museum",
+    title: "Major exhibitions in Naha, Japan (Mitsukoshi) and Taipei Fine Arts Museum",
+    description: "",
+  },
+  {
+    year: "1989",
+    title: "Exhibits at Singapore National Museum and National Art Gallery, Kuala Lumpur",
     description: "",
   },
   {
@@ -51,7 +56,7 @@ const timelineEvents = [
   },
   {
     year: "2020",
-    title: "Passes away, leaving a preserved estate collection representing five decades of artistic work",
+    title: "Passes away, leaving a preserved estate collection",
     description: "",
   },
 ];

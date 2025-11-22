@@ -8,8 +8,9 @@ export default function LegacySection() {
         
         <div className="mb-12">
           <blockquote className="italic text-lg md:text-xl leading-relaxed border-l-4 border-accent pl-6">
-            Art is not a commodity—it is a conversation across time. Each sculpture begins as a dialogue between material and vision, between what is and what might be.
+            I try to interpret an individual piece of coral to let the inner beauty be revealed and am consciously adopting the Eastern precept of economy of line.
           </blockquote>
+          <p className="text-gray-400 text-sm mt-4 pl-6">— David Willis</p>
         </div>
 
         <div className="bg-gray-800 rounded-lg p-8 md:p-10">
@@ -17,7 +18,7 @@ export default function LegacySection() {
             The Estate Collection
           </h3>
           <p className="text-gray-300 leading-relaxed mb-6">
-            David Willis&rsquo;s family has retained his life&rsquo;s work—an extraordinary archive spanning 1970–2020. The Willis estate offers a rare opportunity to acquire pieces with complete provenance, documentation, and historical context.
+            David Willis&rsquo;s family has retained his life&rsquo;s work—an extraordinary archive spanning 1965–2020. The Willis estate offers a rare opportunity to acquire pieces with complete provenance, documentation, and historical context from a career that began in Italy and spanned galleries across Europe, Asia, and North America.
           </p>
           <ul className="text-gray-300 leading-relaxed mb-6 space-y-2 list-disc list-inside">
             <li>Major sculptural works from each creative period</li>
