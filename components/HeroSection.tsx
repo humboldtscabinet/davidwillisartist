@@ -30,14 +30,17 @@ export default function HeroSection() {
             1938–2020
           </p>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-            Placeholder text about the artist&apos;s life and work. This section can include a brief introduction to David Willis&apos;s artistic journey, his unique approach to sculpture, and his lasting impact on the art world.
+            American sculptor and painter whose career spanned five decades and four continents. His work, preserved intact by his family, represents an unprecedented opportunity to acquire pieces from a complete artistic archive.
+          </p>
+          <p className="text-base text-gray-600">
+            Featured at Taipei Fine Arts Museum • Exhibited internationally across Europe and Asia • Specializing in coral sculpture and organic forms
           </p>
           <a
             href="#gallery"
             className="inline-block px-8 py-3 bg-brand text-white font-semibold rounded-lg hover:bg-brand-dark transition-colors"
             aria-label="View gallery"
           >
-            Explore My Work
+            View Collection
           </a>
         </div>
       </div>
