@@ -35,13 +35,6 @@ export default function HeroSection() {
           <p className="text-base text-gray-600">
             Featured at Taipei Fine Arts Museum • Exhibited internationally across Europe and Asia • Specializing in coral sculpture and organic forms
           </p>
-          <a
-            href="#gallery"
-            className="inline-block px-8 py-3 bg-brand text-white font-semibold rounded-lg hover:bg-brand-dark transition-colors"
-            aria-label="View gallery"
-          >
-            View Collection
-          </a>
         </div>
       </div>
     </header>
