@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import Lightbox from "./Lightbox";
 
 const galleryImages = [1,2,4,5,7,8,9,10,11,12,15,16,19,21,23,27,38,39,40,41,42].map(num => ({
   id: num,
@@ -12,8 +10,6 @@ const galleryImages = [1,2,4,5,7,8,9,10,11,12,15,16,19,21,23,27,38,39,40,41,42].
 }));
 
 export default function GallerySection() {
-  const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
-
   return (
     <section id="gallery" className="py-20 px-4 bg-surface-light">
       <div className="max-w-6xl mx-auto">
@@ -22,29 +18,21 @@ export default function GallerySection() {
         </h2>
         <div className="grid grid-cols-3 gap-4">
           {galleryImages.map((image) => (
-            <button
+            <div
               key={image.id}
-              onClick={() => setSelectedImage(image)}
-              className="relative aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-brand"
-              aria-label={`View ${image.title}`}
+              className="relative aspect-square overflow-hidden rounded-lg"
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 768px) 33vw, 33vw"
                 className="object-cover"
               />
-            </button>
+            </div>
           ))}
         </div>
       </div>
-      {selectedImage && (
-        <Lightbox
-          image={selectedImage}
-          onClose={() => setSelectedImage(null)}
-        />
-      )}
     </section>
   );
 }
