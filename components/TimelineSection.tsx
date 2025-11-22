@@ -61,6 +61,8 @@ const timelineEvents = [
   },
 ];
 
+import Image from "next/image";
+
 export default function TimelineSection() {
   return (
     <section id="timeline" className="py-20 px-4 max-w-4xl mx-auto">
@@ -82,6 +84,15 @@ export default function TimelineSection() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="relative w-full mt-12 rounded-lg overflow-hidden">
+        <Image
+          src="/images/timeline-footer.jpg"
+          alt="David Willis coral sculpture"
+          width={1200}
+          height={800}
+          className="w-full h-auto"
+        />
       </div>
     </section>
   );
