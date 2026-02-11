@@ -78,9 +78,6 @@ export default function GallerySection() {
                 className="object-cover"
                 priority
               />
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-3">
-                <p className="text-white text-sm font-medium leading-tight">{image.title}</p>
-              </div>
             </div>
           ))}
         </div>
