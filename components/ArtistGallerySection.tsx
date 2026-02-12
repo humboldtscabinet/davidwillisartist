@@ -3,7 +3,6 @@ import Image from "next/image";
 const images = [
   "Classic Gallerydavid willis coral sculptorPC - A -01.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -02.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -03.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -04.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -05.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -07.jpg",
