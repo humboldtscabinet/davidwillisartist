@@ -3,6 +3,7 @@ import AboutSection from "@/components/AboutSection";
 import ArtisticVisionSection from "@/components/ArtisticVisionSection";
 import TimelineSection from "@/components/TimelineSection";
 import LegacySection from "@/components/LegacySection";
+import ArtistGallerySection from "@/components/ArtistGallerySection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutSection />
       <ArtisticVisionSection />
       <LegacySection />
+      <ArtistGallerySection />
       <TimelineSection />
       <footer className="bg-surface-dark text-gray-300 py-8 text-center">
         <p>&copy; {new Date().getFullYear()} David Willis. All rights reserved.</p>
