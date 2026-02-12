@@ -9,7 +9,6 @@ const images = [
   "Classic Gallerydavid willis coral sculptorPC - A -08.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -09.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -10.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -11.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -12.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -15.jpg",
   "Classic Gallerydavid willis coral sculptorPC - A -16.jpg",
