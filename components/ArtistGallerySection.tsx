@@ -1,12 +1,32 @@
+import Image from "next/image";
+
+const images = [
+  "Classic Gallerydavid willis coral sculptorPC - A -01.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -02.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -03.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -04.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -05.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -07.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -08.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -09.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -10.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -11.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -12.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -15.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -16.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -19.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -21.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -23.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -27.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -38.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -39.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -40.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -41.jpg",
+  "Classic Gallerydavid willis coral sculptorPC - A -42.jpg",
+];
+
 export default function ArtistGallerySection() {
-  const placeholders = [
-    "Sculpture studies",
-    "Coral portraits",
-    "Stone figures",
-    "Studio details",
-    "Outdoor installs",
-    "Works in progress",
-  ];
+  const buildAlt = (filename: string) => `Classic gallery piece ${filename.split(" - A - ")[1]?.replace(".jpg", "") ?? ""}`;
 
   return (
     <section id="artist-gallery" className="bg-surface-light py-16 px-4">
@@ -21,15 +41,16 @@ export default function ArtistGallerySection() {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {placeholders.map((label) => (
-            <div
-              key={label}
-              className="relative h-40 rounded-2xl bg-gradient-to-br from-brand to-accent text-white flex items-center justify-center shadow-md"
-              aria-label={label}
-            >
-              <span className="text-center text-sm font-semibold uppercase tracking-wide drop-shadow-sm">
-                {label}
-              </span>
+          {images.map((src) => (
+            <div key={src} className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-100 shadow-md">
+              <Image
+                src={`/images/${src}`}
+                alt={buildAlt(src)}
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover"
+                priority
+              />
             </div>
           ))}
         </div>
