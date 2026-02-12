@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ArtisticVisionSection from "@/components/ArtisticVisionSection";
-import GallerySection from "@/components/GallerySection";
 import TimelineSection from "@/components/TimelineSection";
 import LegacySection from "@/components/LegacySection";
 
@@ -11,7 +10,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ArtisticVisionSection />
-      <GallerySection />
       <LegacySection />
       <TimelineSection />
       <footer className="bg-surface-dark text-gray-300 py-8 text-center">
