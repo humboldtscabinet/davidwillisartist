@@ -1,30 +1,4 @@
-import Image from "next/image";
-
-const images = [
-  "Classic Gallerydavid willis coral sculptorPC - A -01.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -02.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -04.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -05.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -07.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -08.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -09.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -12.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -15.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -16.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -19.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -21.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -23.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -27.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -38.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -39.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -40.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -41.jpg",
-  "Classic Gallerydavid willis coral sculptorPC - A -42.jpg",
-];
-
 export default function ArtistGallerySection() {
-  const buildAlt = (filename: string) => `Classic gallery piece ${filename.split(" - A - ")[1]?.replace(".jpg", "") ?? ""}`;
-
   return (
     <section id="artist-gallery" className="bg-surface-light py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -37,19 +11,8 @@ export default function ArtistGallerySection() {
             A rotating selection of David Willis&rsquo;s coral and stone works. For high-resolution images and inquiries, please contact the studio directly.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {images.map((src) => (
-            <div key={src} className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-100 shadow-md">
-              <Image
-                src={`/images/${src}`}
-                alt={buildAlt(src)}
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-                priority
-              />
-            </div>
-          ))}
+        <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-10 text-center text-gray-600 shadow-sm">
+          Gallery images are temporarily unavailable. Please check back soon or contact the studio for access.
         </div>
       </div>
     </section>
