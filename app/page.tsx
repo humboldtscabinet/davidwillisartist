@@ -35,7 +35,7 @@ export default function Home() {
               alt="David Willis sculpture with triangular form"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 60vw"
-              className="object-cover"
+              className="object-cover origin-center scale-90"
               priority
             />
           </div>
