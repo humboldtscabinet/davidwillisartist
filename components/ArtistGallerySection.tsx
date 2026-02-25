@@ -1,3 +1,25 @@
+import Image from "next/image";
+
+const images = [
+  "Site Gallery 1david willis coral sculptorPC - A -01.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -02.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -03.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -04.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -05.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -09.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -19.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -21.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -23.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -27.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -38.jpg",
+  "Site Gallery 1david willis coral sculptorPC - A -42.jpg",
+];
+
+const buildAlt = (filename: string) => {
+  const match = filename.match(/- A -(\d+)/);
+  return match ? `Site gallery piece A-${match[1]}` : "Site gallery piece";
+};
+
 export default function ArtistGallerySection() {
   return (
     <section id="artist-gallery" className="bg-surface-light py-16 px-4">
@@ -11,8 +33,22 @@ export default function ArtistGallerySection() {
             A rotating selection of David Willis&rsquo;s coral and stone works. For high-resolution images and inquiries, please contact the studio directly.
           </p>
         </div>
-        <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-10 text-center text-gray-600 shadow-sm">
-          Gallery images are temporarily unavailable. Please check back soon or contact the studio for access.
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {images.map((src) => (
+            <div
+              key={src}
+              className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-100 shadow-md"
+            >
+              <Image
+                src={`/images/${src}`}
+                alt={buildAlt(src)}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
