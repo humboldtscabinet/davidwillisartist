@@ -44,7 +44,7 @@ export default function ArtistGallerySection() {
                 alt={buildAlt(src)}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className={src.includes("A -38") ? "object-contain" : "object-cover"}
+                className={src.includes("A -38") ? "object-cover object-left" : "object-cover"}
                 priority
               />
             </div>
