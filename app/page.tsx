@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ArtisticVisionSection from "@/components/ArtisticVisionSection";
@@ -11,6 +12,20 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ArtisticVisionSection />
+      <section className="px-4 py-12 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="/images/Large%20Coral%20Outside.jpg"
+              alt="Large coral sculpture displayed outdoors"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 60vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </section>
       <LegacySection />
       <ArtistGallerySection />
       <TimelineSection />
