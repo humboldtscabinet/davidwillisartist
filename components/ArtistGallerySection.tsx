@@ -12,7 +12,6 @@ const images = [
   "Site Gallery 1david willis coral sculptorPC - A -23.jpg",
   "Site Gallery 1david willis coral sculptorPC - A -27.jpg",
   "Site Gallery 1david willis coral sculptorPC - A -38.jpg",
-  "Site Gallery 1david willis coral sculptorPC - A -42.jpg",
 ];
 
 const buildAlt = (filename: string) => {
