@@ -27,6 +27,20 @@ export default function Home() {
         </div>
       </section>
       <LegacySection />
+      <section className="px-4 py-12 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="/images/Website%20Embed%20Photo%20Triangle.jpg"
+              alt="David Willis sculpture with triangular form"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 60vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </section>
       <ArtistGallerySection />
       <TimelineSection />
       <footer className="bg-surface-dark text-gray-300 py-8 text-center">
