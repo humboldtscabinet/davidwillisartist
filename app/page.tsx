@@ -37,13 +37,25 @@ export default function Home() {
           </p>
           <div className="relative w-full aspect-[16/10] overflow-hidden rounded-2xl shadow-xl border border-gray-200 bg-white">
             <iframe
-              src="/images/spirit-of-asia-in-coral/index.html"
+              src="/images/spirit-of-asia-in-coral/index.html?embed=1"
               title="The Spirit of Asia in Coral flipbook"
               className="absolute inset-0 h-full w-full"
-              loading="lazy"
+              loading="eager"
               allowFullScreen
             />
           </div>
+          <p className="mt-4 text-center text-sm text-gray-500">
+            If the embedded viewer does not load, open it directly{" "}
+            <a
+              href="/images/spirit-of-asia-in-coral/index.html?embed=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-brand hover:underline"
+            >
+              in a new tab
+            </a>
+            .
+          </p>
         </div>
       </section>
       <section className="px-4 py-12 bg-gray-50">
