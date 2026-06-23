@@ -27,6 +27,25 @@ export default function Home() {
         </div>
       </section>
       <LegacySection />
+      <section id="flipbook" className="px-4 py-16 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-surface-dark mb-6">
+            The Spirit of Asia in Coral
+          </h2>
+          <p className="text-center text-gray-600 mb-8">
+            Explore the flipbook edition below.
+          </p>
+          <div className="relative w-full aspect-[16/10] overflow-hidden rounded-2xl shadow-xl border border-gray-200 bg-white">
+            <iframe
+              src="/images/spirit-of-asia-in-coral/index.html"
+              title="The Spirit of Asia in Coral flipbook"
+              className="absolute inset-0 h-full w-full"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
       <section className="px-4 py-12 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
