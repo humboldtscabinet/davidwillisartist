@@ -28,7 +28,7 @@ export default function Home() {
       </section>
       <LegacySection />
       <section id="flipbook" className="px-4 py-16 bg-white">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-[82.8rem] mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-surface-dark mb-6">
             The Spirit of Asia in Coral
           </h2>
