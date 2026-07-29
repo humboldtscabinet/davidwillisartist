@@ -35,7 +35,8 @@ export default function Home() {
           <p className="text-center text-gray-600 mb-8">
             Explore the flipbook edition below.
           </p>
-          <div className="relative w-full aspect-[16/10] overflow-hidden rounded-2xl shadow-xl border border-gray-200 bg-white">
+          {/* On phones the flipbook loads its portrait "phone" template, so it needs a tall viewport; keep the 16:10 box on md+ screens. */}
+          <div className="relative w-full h-[75svh] min-h-[24rem] md:h-auto md:min-h-0 md:aspect-[16/10] overflow-hidden rounded-2xl shadow-xl border border-gray-200 bg-white">
             <iframe
               src="/images/spirit-of-asia-in-coral/index.html?embed=1"
               title="The Spirit of Asia in Coral flipbook"
