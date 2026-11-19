@@ -68,3 +68,11 @@ export function catalogSrc(page: CatalogPage, size: "large" | "thumb") {
     ? `${LARGE_BASE}/${page.large}`
     : `${THUMB_BASE}/${page.thumb}`;
 }
+
+// Cover plus the sculpture plates. Essays, the portrait, studio shots, lists, and the colophon are left out.
+const artworkPageNumbers = new Set<number>([
+  1,
+  ...Array.from({ length: 32 }, (_, index) => index + 14),
+]);
+
+export const artworkPages = catalogPages.filter((page) => artworkPageNumbers.has(page.page));
