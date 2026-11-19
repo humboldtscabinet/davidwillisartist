@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SiteFooter from "@/components/SiteFooter";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-surface-light text-gray-900">
+        <SiteNav />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ArtisticVisionSection from "@/components/ArtisticVisionSection";
@@ -32,8 +33,16 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-surface-dark mb-6">
             The Spirit of Asia in Coral
           </h2>
-          <p className="text-center text-gray-600 mb-8">
-            Explore the flipbook edition below.
+          <p className="text-center text-gray-600 mb-4">
+            Turn the pages in the viewer, or read the same catalog as photographs.
+          </p>
+          <p className="mb-8 text-center">
+            <Link
+              href="/taipei"
+              className="inline-flex items-center rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-dark"
+            >
+              Browse the Taipei Show pages
+            </Link>
           </p>
           {/* On phones the flipbook loads its portrait "phone" template, so it needs a tall viewport; keep the 16:10 box on md+ screens. */}
           <div className="relative w-full h-[75svh] min-h-[24rem] md:h-auto md:min-h-0 md:aspect-[16/10] overflow-hidden rounded-2xl shadow-xl border border-gray-200 bg-white">
@@ -75,9 +84,6 @@ export default function Home() {
       </section>
       <ArtistGallerySection />
       <TimelineSection />
-      <footer className="bg-surface-dark text-gray-300 py-8 text-center">
-        <p>&copy; {new Date().getFullYear()} David Willis. All rights reserved.</p>
-      </footer>
     </main>
   );
 }
