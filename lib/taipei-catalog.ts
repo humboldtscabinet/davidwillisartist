@@ -68,3 +68,22 @@ export function catalogSrc(page: CatalogPage, size: "large" | "thumb") {
     ? `${LARGE_BASE}/${page.large}`
     : `${THUMB_BASE}/${page.thumb}`;
 }
+
+// Every catalog page was checked. These are words only, or photographs of the artist rather than a piece.
+const omittedPageNumbers = new Set<number>([
+  2, // title page
+  3, // preface
+  4, // preface, continued
+  5, // portrait
+  6, // studio
+  7, // essay
+  8, // biographical notes
+  9, // artist at work
+  10, // essay
+  11, // essay
+  12, // list of works
+  13, // section divider
+  46, // colophon
+]);
+
+export const artworkPages = catalogPages.filter((page) => !omittedPageNumbers.has(page.page));

@@ -34,14 +34,14 @@ export default function Home() {
             The Spirit of Asia in Coral
           </h2>
           <p className="text-center text-gray-600 mb-4">
-            Turn the pages in the viewer, or read the same catalog as photographs.
+            Turn the pages in the viewer, or look at the sculptures from the exhibition.
           </p>
           <p className="mb-8 text-center">
             <Link
               href="/taipei"
               className="inline-flex items-center rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-dark"
             >
-              Browse the Taipei Show pages
+              See the Taipei Show sculptures
             </Link>
           </p>
           {/* On phones the flipbook loads its portrait "phone" template, so it needs a tall viewport; keep the 16:10 box on md+ screens. */}
