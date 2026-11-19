@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <header
+    <section
       id="hero"
-      className="min-h-screen flex items-center bg-white"
+      className="flex min-h-[calc(100svh-4rem)] items-center bg-white"
     >
       <div className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center w-full">
         {/* Left side - Image */}
@@ -37,6 +37,6 @@ export default function HeroSection() {
           </p>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
