@@ -69,10 +69,21 @@ export function catalogSrc(page: CatalogPage, size: "large" | "thumb") {
     : `${THUMB_BASE}/${page.thumb}`;
 }
 
-// Cover plus the sculpture plates. Essays, the portrait, studio shots, lists, and the colophon are left out.
-const artworkPageNumbers = new Set<number>([
-  1,
-  ...Array.from({ length: 32 }, (_, index) => index + 14),
+// Every catalog page was checked. These are words only, or photographs of the artist rather than a piece.
+const omittedPageNumbers = new Set<number>([
+  2, // title page
+  3, // preface
+  4, // preface, continued
+  5, // portrait
+  6, // studio
+  7, // essay
+  8, // biographical notes
+  9, // artist at work
+  10, // essay
+  11, // essay
+  12, // list of works
+  13, // section divider
+  46, // colophon
 ]);
 
-export const artworkPages = catalogPages.filter((page) => artworkPageNumbers.has(page.page));
+export const artworkPages = catalogPages.filter((page) => !omittedPageNumbers.has(page.page));
