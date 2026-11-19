@@ -33,19 +33,25 @@ export default function TaipeiShowPage() {
       </section>
       <section className="bg-surface-light px-4 pb-20" aria-label="Exhibition sculptures">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
-          {artworkPages.map((page, index) => (
-            <figure key={page.page} className="bg-white">
-              <Image
-                src={catalogSrc(page, "large")}
-                alt={`Coral sculpture ${index + 1} of ${artworkPages.length} from ${TAIPEI_SHOW.title}, ${TAIPEI_SHOW.venue}, 1988`}
-                width={1200}
-                height={1207}
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="h-auto w-full"
-                priority={index < 2}
-              />
-            </figure>
-          ))}
+          {artworkPages.map((page, index) => {
+            const isCover = page.page === 1;
+            const alt = isCover
+              ? `Catalog cover of ${TAIPEI_SHOW.title}, ${TAIPEI_SHOW.venue}, 1988`
+              : `Coral sculpture ${index} of ${artworkPages.length - 1} from ${TAIPEI_SHOW.title}, ${TAIPEI_SHOW.venue}, 1988`;
+            return (
+              <figure key={page.page} className="bg-white">
+                <Image
+                  src={catalogSrc(page, "large")}
+                  alt={alt}
+                  width={1200}
+                  height={1207}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="h-auto w-full"
+                  priority={index < 2}
+                />
+              </figure>
+            );
+          })}
         </div>
       </section>
     </main>
