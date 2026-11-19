@@ -21,6 +21,9 @@ export default function TaipeiCatalog() {
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const openerRef = useRef<HTMLButtonElement | null>(null);
   const viewerWasOpen = useRef(false);
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+  const programmaticPageRef = useRef<number | null>(null);
+  const jumpTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const nodes = pageRefs.current.filter((node): node is HTMLElement => node !== null);
@@ -33,7 +36,12 @@ export default function TaipeiCatalog() {
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (!visible) return;
         const page = Number(visible.target.getAttribute("data-page"));
-        if (page) setActivePage(page);
+        if (!page) return;
+        if (programmaticPageRef.current !== null) {
+          if (page !== programmaticPageRef.current) return;
+          programmaticPageRef.current = null;
+        }
+        setActivePage(page);
       },
       { rootMargin: "-20% 0px -55% 0px", threshold: [0.15, 0.4, 0.7] }
     );
@@ -46,11 +54,19 @@ export default function TaipeiCatalog() {
     const thumb = thumbRefs.current[activePage - 1];
     const strip = thumbStripRef.current;
     if (!thumb || !strip) return;
-    const target = thumb.offsetLeft - strip.clientWidth / 2 + thumb.clientWidth / 2;
+    const thumbRect = thumb.getBoundingClientRect();
+    const stripRect = strip.getBoundingClientRect();
+    const target =
+      strip.scrollLeft + (thumbRect.left - stripRect.left) - strip.clientWidth / 2 + thumbRect.width / 2;
     strip.scrollTo({ left: target, behavior: "smooth" });
   }, [activePage]);
 
   const scrollToPage = (page: number) => {
+    programmaticPageRef.current = page;
+    if (jumpTimeoutRef.current) clearTimeout(jumpTimeoutRef.current);
+    jumpTimeoutRef.current = setTimeout(() => {
+      programmaticPageRef.current = null;
+    }, 1200);
     pageRefs.current[page - 1]?.scrollIntoView({ behavior: "smooth", block: "start" });
     setActivePage(page);
   };
@@ -83,6 +99,26 @@ export default function TaipeiCatalog() {
       if (event.key === "Escape") closeViewer();
       if (event.key === "ArrowRight") stepViewer(1);
       if (event.key === "ArrowLeft") stepViewer(-1);
+      if (event.key === "Tab") {
+        const container = dialogRef.current;
+        if (!container) return;
+        const focusable = container.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], select, textarea, input, [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        const active = document.activeElement;
+        if (event.shiftKey) {
+          if (active === first || !container.contains(active)) {
+            event.preventDefault();
+            last.focus();
+          }
+        } else if (active === last || !container.contains(active)) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     };
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -207,12 +243,13 @@ export default function TaipeiCatalog() {
 
       {viewing && (
         <div
+          ref={dialogRef}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4"
           role="dialog"
           aria-modal="true"
           aria-label={pageLabel(viewing)}
-          onClick={closeViewer}
         >
+          <div className="absolute inset-0" aria-hidden="true" onClick={closeViewer} />
           <button
             ref={closeButtonRef}
             type="button"
@@ -247,7 +284,7 @@ export default function TaipeiCatalog() {
             ›
           </button>
           <div
-            className="flex max-h-[90vh] w-full max-w-5xl flex-col items-center"
+            className="relative flex max-h-[90vh] w-full max-w-5xl flex-col items-center"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="relative h-[78vh] w-full">
